@@ -180,9 +180,32 @@ span {
 /* about me page */
 
 .about-me {
-    background: url(images/about-me-background.png) repeat fixed 25%;
-    text-align: center;
+    position: relative;
     min-height: 100vh;
+    background: url(images/about-me-background.png) fixed 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.about-me h1,
+.about-me h2,
+.about-me p {
+    position: relative;
+    z-index: 1;
+    text-align: center;
 }
 
 .about-me h1,
@@ -372,7 +395,7 @@ footer {
 
 .footer-container {
     width: 100%;
-    padding: 70px 30px 20px;
+    padding: 25px 15px 10px;
 }
 
 .icons-footer {
@@ -388,7 +411,7 @@ footer {
 }
 
 .icons-footer a i {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--white);
     opacity: 0.9;
 }
@@ -404,7 +427,7 @@ footer {
 }
 
 .footer-nav {
-    margin: 25px 0;
+    margin: 20px 0;
 }
 
 .footer-nav ul {
@@ -440,6 +463,66 @@ footer {
     letter-spacing: 1px;
     font-weight: 400;
     margin: 0 5px;
+}
+
+
+/* contact page */
+
+.contact-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #3551b5),
+    url(images/contact-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    color: #fff;
+  }
+  
+form {
+    width: 90%;
+    max-width: 600px;
+}
+
+.input-group {
+    margin-bottom: 18px;
+    position: relative;
+}
+
+.contact-input,
+.contact-textarea {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    font-size: 15px;
+}
+
+.contact-button {
+    padding: 10px 0;
+    color: #fff;
+    outline: none;
+    background: transparent;
+    border: 1px solid #fff;
+    width: 100%;
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row .input-group {
+    flex-basis: 48%;
 }
 
 /* media queries */
