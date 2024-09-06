@@ -174,7 +174,7 @@ span {
 }
 
 .btn:hover {
-    box-shadow: none;
+    box-shadow: none; 
 }
 
 /* about me page */
@@ -185,9 +185,9 @@ span {
     background: url(images/about-me-background.png) fixed 25%;
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
 .about-me::before {
@@ -204,8 +204,8 @@ span {
 .about-me h2,
 .about-me p {
     position: relative;
-    z-index: 1;
-    text-align: center;
+    /* z-index: 1; */
+    /* text-align: center; */
 }
 
 .about-me h1,
@@ -215,13 +215,37 @@ span {
 }
 
 .about-me h1 {
-    text-align: center;
     font-size: 2.4rem;
 }
 
 .about-me p {
     color: var(--white);
     font-size: 1.2rem;
+}
+
+.about-header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.about-text {
+    flex: 1;
+    margin-right: 37px;
+}
+
+.services {
+    flex: 1;
+    margin-left: 37px;
+}
+
+.services hr {
+    margin: 10px 0;
 }
 
 /* soft skills */
@@ -593,6 +617,10 @@ form {
 
       .projects-container {
         grid-template-columns: 1fr;
+      }
+
+      .about-container {
+        flex-direction: column;
       }
 }
 
