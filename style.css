@@ -211,10 +211,16 @@ span {
 .about-me h1,
 .about-me h2 {
     color: var(--header);
-    padding: 20px 0;
+    margin: 20px 0;
 }
 
-.about-me h1 {
+.about-header {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.about-header h1 {
     font-size: 2.4rem;
 }
 
@@ -223,15 +229,14 @@ span {
     font-size: 1.2rem;
 }
 
-.about-header {
-    text-align: center;
-    margin: 20px 0;
-}
-
 .about-container {
     display: flex;
     justify-content: center;
     column-gap: 20px;
+}
+
+.about-container p {
+    line-height: 1.5;
 }
 
 .about-text {
@@ -244,8 +249,12 @@ span {
     margin-left: 37px;
 }
 
+.services-header h2 {
+    font-size: 2.2rem;
+}
+
 .services hr {
-    margin: 10px 0;
+    margin: 10px 5px;
 }
 
 /* soft skills */
@@ -266,7 +275,7 @@ span {
     text-align: center;
     color: var(--header);
     font-size: 1.5rem;
-    margin: 18px 0;
+    margin: 20px 0;
 }
 
 .skills-container {
@@ -297,6 +306,66 @@ span {
 .fun-facts {
     background: var(--section-color-2);
     min-height: 100vh;
+}
+
+.facts-header {
+    font-size: 2.4rem;
+    text-align: center;
+    color: var(--header);
+    margin-top: 40px;
+    margin-bottom: 60px;
+    text-decoration: underline 4px;
+}
+
+.questions-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.question {
+    border-bottom: 1px solid #fff;
+}
+
+.question button {
+    width: 100%;
+    background-color: #737373;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    border:none;
+    outline: none;
+    font-size: 22px;
+    /* color: #fff; */
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.question p{
+    font-size: 18px;
+    max-height: 0;
+    opacity: 0;
+    line-height: 1.5;
+    overflow: hidden;
+    transition: all 0.6s ease;
+    margin-top: 15px;
+}
+
+.question span {
+    color: var(--header);
+}
+.d-arrow{
+    transition: transform 0.5s ease-in ;
+}
+
+/* toggle */
+.question p.show{
+    max-height: 200px; 
+    opacity: 1;
+    padding:0px 15px 30px 15px;
+}
+.question button .d-arrow.rotate{
+    transform: rotate(180deg);
 }
 
 /* projects */
@@ -622,6 +691,11 @@ form {
       .about-container {
         flex-direction: column;
       }
+
+      .services {
+        flex: 0;
+        margin-left: 0px;
+    }
 }
 
 @media (max-width: 700px) {

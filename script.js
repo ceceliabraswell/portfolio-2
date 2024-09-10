@@ -18,3 +18,16 @@ function sendEmail() {
 
     emailjs.send("service_d0ygltw","template_hlbagkf",parameters).then(alert("Email sent."))
 }
+
+// JS code for Random FAQs section
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach( button =>{
+    button.addEventListener('click',()=>{
+        const faq = button.nextElementSibling;
+        const icon = button.children[1];
+
+        faq.classList.toggle('show');
+        icon.classList.toggle('rotate');
+    })
+} )
