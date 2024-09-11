@@ -318,7 +318,7 @@ span {
 }
 
 .questions-container {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -356,6 +356,7 @@ span {
 }
 .d-arrow{
     transition: transform 0.5s ease-in ;
+    color: red;
 }
 
 /* toggle */
