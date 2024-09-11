@@ -356,12 +356,11 @@ span {
 }
 .d-arrow{
     transition: transform 0.5s ease-in ;
-    color: red;
 }
 
 /* toggle */
 .question p.show{
-    max-height: 200px; 
+    max-height: 500px; 
     opacity: 1;
     padding:0px 15px 30px 15px;
 }
