@@ -696,6 +696,10 @@ form {
         flex: 0;
         margin-left: 0px;
     }
+
+    .fun-facts {
+        min-height: 70vh;
+    }
 }
 
 @media (max-width: 700px) {
