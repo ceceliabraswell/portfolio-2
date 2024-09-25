@@ -182,7 +182,7 @@ span {
 .about-me {
     position: relative;
     min-height: 100vh;
-    background: url(images/about-me-background.png) fixed 25%;
+    background: url(images/charlie.jpg) fixed 25%;
     background-size: cover;
     background-repeat: no-repeat;
     /* display: flex;
