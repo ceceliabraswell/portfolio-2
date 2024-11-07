@@ -341,7 +341,7 @@ section {
     cursor: pointer;
 }
 
-.question p{
+.question p {
     font-size: 18px;
     max-height: 0;
     opacity: 0;
@@ -354,17 +354,17 @@ section {
 .question span {
     color: var(--header);
 }
-.d-arrow{
+.d-arrow {
     transition: transform 0.5s ease-in ;
 }
 
 /* toggle */
-.question p.show{
+.question p.show {
     max-height: 500px; 
     opacity: 1;
-    padding:0px 15px 30px 15px;
+    padding: 0px 15px 30px 15px;
 }
-.question button .d-arrow.rotate{
+.question button .d-arrow.rotate {
     transform: rotate(180deg);
 }
 
